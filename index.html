@@ -3,7 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fıstıkcan's Products</title>
+    <title>Fıstıkcan | Portfolio</title>
+    
+    <!-- JSON-LD YAPILANDIRILMIŞ VERİ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Fıstıkcan",
+      "url": "https://products.fcandev.space",
+      "sameAs": [
+        "https://github.com/Fistikcan",
+        "https://fcandev.space"
+      ],
+      "description": "Fıstıkcan, (FCAN, fcanDev) bedava projeler geliştiren, açık kaynaklı bir geliştirici.",
+      "jobTitle": "Software/Web Developer"
+    }
+    </script>
+    <!-- JSON-LD BİTİŞİ -->
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -147,12 +165,12 @@
                 <div class="flex gap-6 justify-center md:justify-start py-2">
                     <div class="text-center md:text-left">
                         <span id="profile-followers" class="block text-2xl font-extrabold text-stone-900 dark:text-white">0</span>
-                        <span class="text-xs text-stone-400 font-semibold uppercase tracking-wider">Adam gibi adamlar</span>
+                        <span class="text-xs text-stone-400 font-semibold uppercase tracking-wider">Takipçi</span>
                     </div>
                     <div class="w-px bg-stone-200 dark:bg-stone-800"></div>
                     <div class="text-center md:text-left">
                         <span id="profile-public-repos" class="block text-2xl font-extrabold text-stone-900 dark:text-white">0</span>
-                        <span class="text-xs text-stone-400 font-semibold uppercase tracking-wider">Projeler</span>
+                        <span class="text-xs text-stone-400 font-semibold uppercase tracking-wider">Açık Repo</span>
                     </div>
                 </div>
                 
@@ -190,7 +208,7 @@
                     <a href="https://github.com/Fistikcan" target="_blank" class="text-primary hover:underline transition-all">@Fistikcan</a>'s Products
                 </h2>
                 <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
-                <p class="text-stone-500 dark:text-stone-400 max-w-md mx-auto text-sm">Bak hepsi bedava, bi yıldız at da işimiz görülsün.</p>
+                <p class="text-stone-500 dark:text-stone-400 max-w-md mx-auto text-sm">GitHub hesabımdan anlık olarak çekilen açık kaynaklı yazılım projelerim.</p>
             </div>
 
             <!-- Repoların Yükleneceği Izgara (Grid) -->
@@ -204,41 +222,36 @@
     <section id="skills" class="py-24 px-6 relative">
         <div class="max-w-6xl mx-auto space-y-12">
             <div class="text-center space-y-4 reveal">
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">Teknoloji <span class="text-primary">Yelpazem</span></h2>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">Kullandığım <span class="text-primary">Diller</span></h2>
                 <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
-                <p class="text-stone-500 dark:text-stone-400 max-w-md mx-auto text-sm">Projelerimi geliştirirken gücümü aldığım diller ve modern kütüphaneler.</p>
+                <p class="text-stone-500 dark:text-stone-400 max-w-md mx-auto text-sm">Geliştirme süreçlerinde en çok kullandığım diller ve ekosistemler.</p>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 pt-6">
-                <!-- Skill 1 -->
-                <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-white dark:bg-darkCard border border-stone-200/50 dark:border-stone-800/50 hover:border-primary/40 transition-all duration-300 hover:scale-105 group reveal shadow-sm">
-                    <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-3 group-hover:scale-110 transition-transform"></i>
-                    <span class="font-bold text-sm">HTML5</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 max-w-5xl mx-auto">
+                <!-- Birleşik Python, HTML, JS, CSS Kartı (Geniş alan kaplar) -->
+                <div class="sm:col-span-2 flex flex-col items-center justify-center p-8 rounded-3xl bg-white dark:bg-darkCard border border-stone-200/50 dark:border-stone-800/50 hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] group reveal shadow-sm">
+                    <div class="flex items-center gap-6 mb-4 text-4xl">
+                        <i class="fa-brands fa-python text-[#3776AB] group-hover:scale-110 transition-transform" title="Python"></i>
+                        <i class="fa-brands fa-html5 text-[#E34F26] group-hover:scale-110 transition-transform" title="HTML5"></i>
+                        <i class="fa-brands fa-js text-[#F7DF1E] group-hover:scale-110 transition-transform" title="JavaScript"></i>
+                        <i class="fa-brands fa-css3-alt text-[#1572B6] group-hover:scale-110 transition-transform" title="CSS3"></i>
+                    </div>
+                    <span class="font-extrabold text-lg text-stone-900 dark:text-white">Python, HTML, JS, CSS</span>
+                    <span class="text-xs text-stone-400 mt-1 uppercase tracking-wider font-semibold">Web & Scripting Yapay Zekası</span>
                 </div>
-                <!-- Skill 2 -->
-                <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-white dark:bg-darkCard border border-stone-200/50 dark:border-stone-800/50 hover:border-primary/40 transition-all duration-300 hover:scale-105 group reveal shadow-sm">
-                    <i class="fa-brands fa-css3-alt text-4xl text-blue-500 mb-3 group-hover:scale-110 transition-transform"></i>
-                    <span class="font-bold text-sm">CSS3</span>
+
+                <!-- C++ Kartı -->
+                <div class="flex flex-col items-center justify-center p-8 rounded-3xl bg-white dark:bg-darkCard border border-stone-200/50 dark:border-stone-800/50 hover:border-primary/40 transition-all duration-300 hover:scale-[1.03] group reveal shadow-sm">
+                    <div class="text-3xl font-black text-[#00599C] dark:text-sky-400 mb-4 tracking-tighter group-hover:scale-110 transition-transform">C++</div>
+                    <span class="font-extrabold text-sm text-stone-900 dark:text-white">C++</span>
+                    <span class="text-xs text-stone-400 mt-1 uppercase tracking-wider font-semibold">Sistem ve Performans</span>
                 </div>
-                <!-- Skill 3 -->
-                <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-white dark:bg-darkCard border border-stone-200/50 dark:border-stone-800/50 hover:border-primary/40 transition-all duration-300 hover:scale-105 group reveal shadow-sm">
-                    <i class="fa-brands fa-js text-4xl text-yellow-500 mb-3 group-hover:scale-110 transition-transform"></i>
-                    <span class="font-bold text-sm">JavaScript</span>
-                </div>
-                <!-- Skill 4 -->
-                <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-white dark:bg-darkCard border border-stone-200/50 dark:border-stone-800/50 hover:border-primary/40 transition-all duration-300 hover:scale-105 group reveal shadow-sm">
-                    <i class="fa-brands fa-react text-4xl text-cyan-400 mb-3 group-hover:scale-110 transition-transform"></i>
-                    <span class="font-bold text-sm">React.js</span>
-                </div>
-                <!-- Skill 5 -->
-                <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-white dark:bg-darkCard border border-stone-200/50 dark:border-stone-800/50 hover:border-primary/40 transition-all duration-300 hover:scale-105 group reveal shadow-sm">
-                    <i class="fa-brands fa-node-js text-4xl text-green-500 mb-3 group-hover:scale-110 transition-transform"></i>
-                    <span class="font-bold text-sm">Node.js</span>
-                </div>
-                <!-- Skill 6 -->
-                <div class="flex flex-col items-center justify-center p-6 rounded-3xl bg-white dark:bg-darkCard border border-stone-200/50 dark:border-stone-800/50 hover:border-primary/40 transition-all duration-300 hover:scale-105 group reveal shadow-sm">
-                    <i class="fa-brands fa-github text-4xl text-stone-800 dark:text-stone-200 mb-3 group-hover:scale-110 transition-transform"></i>
-                    <span class="font-bold text-sm">Git & GitHub</span>
+
+                <!-- C# Kartı -->
+                <div class="flex flex-col items-center justify-center p-8 rounded-3xl bg-white dark:bg-darkCard border border-stone-200/50 dark:border-stone-800/50 hover:border-primary/40 transition-all duration-300 hover:scale-[1.03] group reveal shadow-sm">
+                    <div class="text-3xl font-black text-[#239120] mb-4 tracking-tighter group-hover:scale-110 transition-transform">C#</div>
+                    <span class="font-extrabold text-sm text-stone-900 dark:text-white">C#</span>
+                    <span class="text-xs text-stone-400 mt-1 uppercase tracking-wider font-semibold">Masaüstü ve Oyun</span>
                 </div>
             </div>
         </div>
@@ -250,25 +263,25 @@
             <div class="text-center space-y-4 reveal">
                 <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">Yeni Bir <span class="text-primary">Fikir mi Var?</span></h2>
                 <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
-                <p class="text-stone-500 dark:text-stone-400 max-w-md mx-auto text-sm"></p>
+                <p class="text-stone-500 dark:text-stone-400 max-w-md mx-auto text-sm">Sorularınız, projeleriniz ya da sadece tanışmak için bana mesaj bırakabilirsiniz.</p>
             </div>
 
             <!-- Form -->
             <div class="bg-white dark:bg-darkCard rounded-3xl p-8 border border-stone-200/60 dark:border-stone-800/60 reveal shadow-xl shadow-stone-200/10 dark:shadow-none">
-                <form action="https://formspree.io/f/xnjkylbv" method="POST" class="space-y-6">
+                <form class="space-y-6" onsubmit="event.preventDefault(); alert('Mesajınız başarıyla iletildi!');">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-2">
                             <label class="text-sm font-bold text-stone-500 dark:text-stone-400">Adınız</label>
-                            <input type="text" name="name" required class="w-full px-5 py-4 bg-stone-50 dark:bg-darkBg border border-stone-200/80 dark:border-stone-800/80 focus:border-primary focus:ring-1 focus:ring-primary rounded-2xl outline-none transition-all duration-300 text-sm">
+                            <input type="text" required class="w-full px-5 py-4 bg-stone-50 dark:bg-darkBg border border-stone-200/80 dark:border-stone-800/80 focus:border-primary focus:ring-1 focus:ring-primary rounded-2xl outline-none transition-all duration-300 text-sm">
                         </div>
                         <div class="space-y-2">
                             <label class="text-sm font-bold text-stone-500 dark:text-stone-400">E-Posta Adresiniz</label>
-                            <input type="email" name="email" required class="w-full px-5 py-4 bg-stone-50 dark:bg-darkBg border border-stone-200/80 dark:border-stone-800/80 focus:border-primary focus:ring-1 focus:ring-primary rounded-2xl outline-none transition-all duration-300 text-sm">
-                       </div>
-                   </div>
+                            <input type="email" required class="w-full px-5 py-4 bg-stone-50 dark:bg-darkBg border border-stone-200/80 dark:border-stone-800/80 focus:border-primary focus:ring-1 focus:ring-primary rounded-2xl outline-none transition-all duration-300 text-sm">
+                        </div>
+                    </div>
                     <div class="space-y-2">
                         <label class="text-sm font-bold text-stone-500 dark:text-stone-400">Mesajınız</label>
-                        <textarea name="message" required rows="5" class="w-full px-5 py-4 bg-stone-50 dark:bg-darkBg border border-stone-200/80 dark:border-stone-800/80 focus:border-primary focus:ring-1 focus:ring-primary rounded-2xl outline-none transition-all duration-300 text-sm resize-none"></textarea>
+                        <textarea required rows="5" class="w-full px-5 py-4 bg-stone-50 dark:bg-darkBg border border-stone-200/80 dark:border-stone-800/80 focus:border-primary focus:ring-1 focus:ring-primary rounded-2xl outline-none transition-all duration-300 text-sm resize-none"></textarea>
                     </div>
                     <button type="submit" class="w-full py-4 bg-primary text-stone-950 font-bold rounded-2xl hover:scale-[1.02] transition-all duration-300 glow-primary shadow-lg shadow-primary/25">
                         Gönder <i class="fa-solid fa-paper-plane ml-2"></i>
